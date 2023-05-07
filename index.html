@@ -2,26 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="shortcut icon" type="image/png" href="src/assets/favicon.png" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Dumitru Supostat | Dev</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
 </head>
 
 <body>
-    <div class="content">
-        <section class="greeting">
-            <div class="container">
-                <h1 class="name">
-                    Hi, my name is <span class="text-color">Dima</span>
-                </h1>
+  <div class="container">
+    <div class="bg-image">
+      <img src="images/bg-pattern-card.svg" alt="">
+    </div>
+    <div class="avatar">
+      <img src="images/image-victor.jpg" alt="">
+    </div>
+    <div class="bio">
+      <h1 class="name">
+        Victor Crest
+        <span class="age">26</span>
+      </h1>
                 <h1 class="ocupation">
                     I'm Web Developer.
                     </h2>
@@ -46,26 +61,9 @@
                             dynamic
                             user interfaces.
                         </p>
-                        <a href="#" class="second-btn button">View resume</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="projects">
-            <div class="container">
-                <h2 class="section-title">
-                    Projects
-                </h2>
-                <div class="container-content">
-                    <div class="left-col">
-                        <h3 class="project-title">
-                            Review page
-                        </h3>
-                        <p class="project-description">
-                            Responsive design. Mobile fist. Based on Flexbox.
-                        </p>
+        <p class="title">
+          Followers
+        </p>
                         <div class="buttons">
                             <a href="projects/review page/index.html" class="main-btn button" target="_blank">See
                                 Live</a>
