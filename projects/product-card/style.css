@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    font-size: 14px;
+    font-family: Montserrat;
+    
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 679px;
+    height: 475px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+}
+.left-container {
+    width: 50%;
+    border-radius: 1rem 0 0 1rem;
+}
+.left-container img {
+    height: 476px;
+    width: 100%;
+}
+img {
+    border-radius: 1rem 0 0 1rem;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    padding: 29px;
+}
+.upper {
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.perfume-name {
+    font-size: 42px;
+    font-family: Fraunces;
+
+}
+.perfume-description, .upper{
+    font-size: 17px;
+    color:  hsl(228, 12%, 48%);
+    font-weight: 500;
+    line-height: 1.5rem;
+    
+}
+.price {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    
+}
+
+.actual-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 36px;
+    font-weight: 700;
+    font-family: Fraunces;
+}
+.older-price {
+    color: hsl(228, 12%, 48%);
+    font-size: 16px;
+    
+}
+.btn {
+    background: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    padding: 15px 0 15px 0;
+    border-radius: .5rem;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.attribution {
+    padding-top: 20px;
+}
+
+/*Small screens*/
+@media (max-width: 600px) {
+
+    body {
+        flex-direction: column;
+        background: hsl(30, 38%, 92%);
+    }
+    .container {
+     flex-direction: column;
+     align-content: center;
+     justify-content: center;
+     width: 375px;
+     background: hsl(0, 0%, 100%);
+     border-radius: 1rem;
+    }
+   
+    .left-container {
+        width: 100%;
+        background: hsl(0, 0%, 100%); 
+        border-radius: 1rem 1rem 0 0;
+        height: 350px;
+    }
+
+    img {
+        border-radius: 1rem 1rem 0 0;
+    }
+    .right-container {
+        background: hsl(0, 0%, 100%);
+        width: 100%;
+        border-radius: 0 0 1rem 1rem;
+        row-gap:  10px;
+        height: 100%;
+    }
+    .attribution {
+     display: none;
+    }
+   }

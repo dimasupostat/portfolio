@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 200ms;
+}
+
+body {
+    background: hsl(221, 100%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+    background: #fff;
+    width: 650px;
+    height: 50vh;
+    box-shadow: 0 15px 15px -5px rgba(160, 180, 200, 0.8);
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: hsl(241, 100%, 89%);
+    background: linear-gradient(hsl(252, 100%, 65%),hsl(241, 81%, 54%));
+    align-items: center;
+    font-family: sans-serif;
+    padding: 1.5rem 2rem;
+    row-gap: 15px;
+    border-radius: 2rem;
+
+    
+}
+
+.card-second {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 15px;
+    width: 100%;
+    background:#FFF;
+    padding: 1.5rem 2rem;
+    border-radius:0 2rem 2rem 0;
+}
+
+.card-main-score {
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 60%;
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px auto;
+}
+.title {
+    font-size: 25px;
+}
+
+.second {
+    color: #000;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+
+}
+.main-score-info {
+    display: flex;
+    color: #FFF;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-score-small {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 15px;
+    color: hsl(241, 100%, 89%);
+}
+
+.main-adj-info {
+    font-size: 30px; 
+    color: #FFF;
+}
+
+.main-description {
+    text-align: center;
+    
+}
+
+
+/*** SECOND CARD ***/
+
+.card-category{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.reaction  {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+span {
+    color: hsl(224, 30%, 27%);
+    
+}
+.score {
+    color: hsl(241, 100%, 89%);
+}
+
+.button {
+    text-decoration: none;
+    padding: 1rem;
+    background: hsl(224, 30%, 27%);
+    border-radius: 2rem;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+
+.attribution {
+    margin-top: 35px;
+}
+
+
+/*Small screens*/
+@media (max-width: 600px) {
+   .card {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 100vh;
+   }
+   .card-main-score {
+    width: 50%;
+   }
+   .attribution {
+    display: none;
+   }
+  }

@@ -1,0 +1,110 @@
+body {
+    background: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Overpass;
+    font-weight: 400;
+}
+.container, .container2 {
+    background: hsl(213, 19%, 18%);
+    max-width: 375px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.container2 {
+    text-align: center;
+}
+
+.star {
+    display: flex;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    background: hsla(216, 12%, 90%, 0.1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.rating {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+}
+.rate {
+    border-radius: 50px;
+    height: 48px;
+    width: 48px;
+    border: 0;
+    background: hsla(216, 12%, 90%, 0.1);
+    justify-content: center;
+    color: hsl(217, 12%, 63%);
+    font-family: Overpass;
+}
+
+.rate:hover{
+    background: hsl(217, 12%, 63%);
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+}
+.rate:active {
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.title {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+.description {
+    color: hsl(217, 12%, 63%);
+}
+
+.btn-submit{
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    height: 48px;
+    width: auto;
+    border-radius: 2rem;
+    border: 0;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    color: hsl(25, 97%, 53%);
+    background: hsl(0, 0%, 100%);
+}
+
+
+.attribution {
+    display: none;
+}
+
+
+
+
+
+.picture {
+    text-align: center;
+    margin-top:1rem;
+}
+
+.output {
+    padding: .3rem;
+    background: hsla(216, 12%, 90%, 0.1);
+    border-radius: 2rem;
+    margin: 0 5rem 0 5rem;
+    color: hsl(25, 97%, 53%);
+}
