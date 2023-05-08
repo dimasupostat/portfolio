@@ -1,5 +1,0 @@
-[submodule "projects/profile-card"] 
-  path = path_to_submodule 
-  url = git://landing/
-[submodule "bar1"]
-	branch = master
