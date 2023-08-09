@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$dark: hsl(249, 10%, 26%);
+$graish: hsl(246, 25%, 77%);
+$white: #fff;
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  height: 100vh;
+  background-image: url(../images/bg-intro-desktop.png);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: $white;
+  background-color: $red;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  .left {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      max-width: 50ch;
+      font-weight: 400;
+    }
+  }
+}
+h1 {
+  font-size: 3em;
+  max-width: 15ch;
+}
+
+.offer {
+  background: $blue;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+  &-anchor {
+    color: $graish;
+    text-decoration: none;
+  }
+  &-text-bold {
+    font-weight: 700;
+    color: $white;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 40px;
+  margin-top: 20px;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+
+  input,
+  button {
+    padding: 20px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: 1px solid $graish;
+    font-weight: 600;
+    color: $dark;
+    font-size: 1em;
+    margin-bottom: 20px;
+    z-index: 1;
+    &:focus {
+      outline: 1px solid $dark;
+    }
+  }
+  .btn {
+    color: $white;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .error {
+    display: none;
+    position: relative;
+    color: $red;
+    font-style: italic;
+    text-align: right;
+    top: -15px;
+    font-size: 0.7em;
+    z-index: 4;
+  }
+  .btn {
+    background-color: $green;
+    cursor: pointer;
+    box-shadow: 0 2px $graish;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:active {
+      transform: translateY(4px);
+    }
+    box-shadow: 0 2px $graish;
+    &:active {
+      transform: translateY(4px);
+    }
+  }
+
+  .terms {
+    color: $graish;
+    font-size: 0.7em;
+    padding: 0 40px;
+    font-weight: 600;
+    a {
+      color: $red;
+      font-weight: 800;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Viewports between 735px and 915px wide */
+@media only screen and (min-device-width: 375px) and (max-device-width: 915px) {
+  body {
+    background-image: url(../images/bg-intro-mobile.png);
+    max-width: 375px;
+    height: auto;
+  }
+  .main {
+    flex-direction: column;
+    margin: 80px 15px;
+    top: 0%;
+    transform: translateY(0);
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .pharagraph {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .offer-anchor {
+      text-align: center;
+    }
+    .terms {
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+}

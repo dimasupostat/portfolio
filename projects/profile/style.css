@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --cyan: hsl(185, 75%, 39%);
+    --desaturated-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+
+    --gray: hsl(0, 0%, 59%);
+}
+
+body {
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/bg-pattern-top.svg) , url(images/bg-pattern-bottom.svg);
+    background-color: var(--cyan);
+    background-repeat: no-repeat;
+    background-position-y: 900%, 400px;
+    background-position-x: -200px, 900px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 1rem;
+}
+
+.bg-image img{
+    border-radius: 1rem 1rem 0 0;
+}
+.avatar img{
+    border-radius: 100%;
+    border: .5rem solid#fff;
+}
+
+.avatar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+    
+    
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title  {
+    text-align: center;
+}
+
+.name {
+    margin-bottom: .5rem;
+}
+
+.name, .followers-number{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+.age {
+    margin-left: .3rem;
+}
+.age , .title, .city{
+    color: var(--gray);
+    font-weight: 400;
+}
+.city {
+    font-size: 1rem;
+    color: var(--gray);
+    font-weight: 400;
+}
+.line {
+    border: .1px solid var(--gray);
+    width: 100%;
+    margin-top: 2rem;
+    
+}
+.statistic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0  2rem 2rem 2rem;
+}
+.followers-number {
+    font-weight: 700;
+}

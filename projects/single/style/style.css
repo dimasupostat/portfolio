@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  height: 100vh;
+  max-width: 1440px;
+  background-color: hsl(204, 43%, 93%);
+  margin: auto;
+}
+
+.main {
+  display: flex;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: center;
+}
+.main .container {
+  display: flex;
+  flex-direction: column;
+}
+.main .container .top .title-blue {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.5em;
+}
+.main .container .top .title-yellow {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.3em;
+  margin: 30px 0 20px 0;
+}
+.main .container .top .title-paragraph {
+  color: hsl(218, 22%, 67%);
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+.main .container .bottom {
+  display: flex;
+  justify-content: center;
+}
+.main .container .bottom .bold {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 10px;
+}
+.main .container .bottom .price {
+  color: hsl(204, 43%, 93%);
+}
+.main .container .bottom .description {
+  margin: 10px 0 20px;
+}
+.main .container .title {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.top {
+  background-color: #fff;
+  padding: 40px 45px;
+}
+
+.bottom-left {
+  background-color: hsl(179, 62%, 43%);
+  padding: 40px;
+  width: 50%;
+  color: #fff;
+}
+.bottom-left button {
+  background-color: hsl(71, 73%, 54%);
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: 1px solid hsl(71, 73%, 54%);
+  font-weight: 700;
+  color: #fff;
+  font-size: 1em;
+  box-shadow: 0 2px 2px hsl(218, 22%, 67%);
+}
+.bottom-left button:active {
+  transform: translateY(4px);
+}
+
+.bottom-right {
+  background-color: hsla(179, 62%, 43%, 0.71);
+  padding: 40px;
+  width: 50%;
+}
+.bottom-right .description {
+  list-style: none;
+  color: hsl(204, 43%, 93%);
+}
+
+/* Viewports between 735px and 915px wide */
+@media only screen and (min-device-width: 375px) and (max-device-width: 915px) {
+  .body {
+    max-width: 375px;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+  .bottom-right,
+  .bottom-left {
+    width: auto;
+    padding: 20px;
+  }
+  .main {
+    top: 0;
+    transform: translateY(0);
+    position: absolute;
+  }
+  .top {
+    padding: 40px 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

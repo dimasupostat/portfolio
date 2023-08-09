@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../../assets/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Overpass"
+    />
+
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <div class="container" id="card1">
+      <div class="star">
+        <img class="image" src="./images/icon-star.svg" alt="" />
+      </div>
+      <h1 class="title">How did we do?</h1>
+      <p class="description">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div class="rating">
+        <button class="rate" id="1" data-value="1">1</button>
+        <button class="rate" id="2" data-value="2">2</button>
+        <button class="rate" id="3" data-value="3">3</button>
+        <button class="rate" id="4" data-value="4">4</button>
+        <button class="rate" id="5" data-value="5">5</button>
+      </div>
+      <button class="btn-submit" onclick="">Submit</button>
+    </div>
+
+    <div class="container2" id="card2" style="display: flex">
+      <div class="picture">
+        <img src="/images/illustration-thank-you.svg" alt="" />
+      </div>
+      <div class="output">You selected ${rating} out of 5</div>
+      <h1 class="title">Thank you!</h1>
+      <p class="description">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

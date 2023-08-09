@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  height: 100vh;
+  background-image: url(../images/bg-intro-desktop.png);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: hsl(0, 100%, 74%);
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main .left {
+  display: flex;
+  flex-direction: column;
+}
+.main .left p {
+  max-width: 50ch;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3em;
+  max-width: 15ch;
+}
+
+.offer {
+  background: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+}
+.offer-anchor {
+  color: hsl(246, 25%, 77%);
+  text-decoration: none;
+}
+.offer-text-bold {
+  font-weight: 700;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  margin-top: 20px;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+}
+form input,
+form button {
+  padding: 20px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+  font-weight: 600;
+  color: hsl(249, 10%, 26%);
+  font-size: 1em;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+form input:focus,
+form button:focus {
+  outline: 1px solid hsl(249, 10%, 26%);
+}
+form .btn {
+  color: #fff;
+}
+form .btn:focus {
+  outline: none;
+}
+form .error {
+  display: none;
+  position: relative;
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+  text-align: right;
+  top: -15px;
+  font-size: 0.7em;
+  z-index: 4;
+}
+form .btn {
+  background-color: hsl(154, 59%, 51%);
+  cursor: pointer;
+  box-shadow: 0 2px hsl(246, 25%, 77%);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+form .btn:active {
+  transform: translateY(4px);
+}
+form .terms {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.7em;
+  padding: 0 40px;
+  font-weight: 600;
+}
+form .terms a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* Viewports between 735px and 915px wide */
+@media only screen and (min-device-width: 375px) and (max-device-width: 915px) {
+  body {
+    background-image: url(../images/bg-intro-mobile.png);
+    max-width: 375px;
+    height: auto;
+  }
+  .main {
+    flex-direction: column;
+    margin: 80px 15px;
+    top: 0%;
+    transform: translateY(0);
+  }
+  .main h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .main .pharagraph {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .main .offer-anchor {
+    text-align: center;
+  }
+  .main .terms {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
