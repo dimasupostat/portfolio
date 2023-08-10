@@ -28,6 +28,11 @@
   </head>
 
   <body>
+    <div class="menus">
+      <a class="menu-link" href="#about">About</a>
+      <a class="menu-link" href="#projects">Projects</a>
+      <a class="menu-link" href="#contact">Contact</a>
+    </div>
     <div class="content">
       <section class="greeting">
         <div class="container">
@@ -56,13 +61,53 @@
           <div class="container-content">
             <div class="left">
               <img
-                class="avatar"
+                class="avatar animate__animated"
                 src="assets/profile.webp"
                 alt="profile-picture"
               />
             </div>
             <div class="right">
-              <!-- <p class="about-description">
+              <ul class="title-column">
+                <li class="title-profile">Name</li>
+                <li class="title-profile">Age</li>
+                <li class="title-profile">Addres</li>
+                <li class="title-profile">Phone</li>
+                <li class="title-profile">e-mail</li>
+                <li class="title-profile">Social</li>
+              </ul>
+              <ul class="description-column">
+                <li class="detail-profile">Dima</li>
+                <li class="detail-profile">25</li>
+                <li class="detail-profile">Chisinau, Moldova</li>
+                <li class="detail-profile">
+                  <a href="tel:+37369309561">+373 69 309 561</a>
+                </li>
+                <li class="detail-profile">
+                  <a href="mailto: dumitru.s1998@gmail.com"
+                    >dumitru.s1998@gmail.com</a
+                  >
+                </li>
+                <li class="detail-profile">
+                  <div class="social">
+                    <a
+                      class="i-social"
+                      href="https://www.instagram.com/dumitru.supostat/"
+                    >
+                      <i class="fa fa-instagram fa-inverse"></i>
+                    </a>
+                    <a class="i-social" href="https://github.com/dimasupostat">
+                      <i class="fa fa-github fa-inverse"></i>
+                    </a>
+                    <a
+                      class="i-social"
+                      href="https://www.linkedin.com/in/dumitru-supostat/"
+                    >
+                      <i class="fa fa-linkedin fa-inverse"></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <p class="about-description">
                 I am currently working with CSS, HTML, and JavaScript. Although
                 my background is in engineering and I believe that my experience
                 in engineering has equipped me with valuable skills, such as
@@ -71,36 +116,6 @@
                 languages and frameworks to create more complex and dynamic user
                 interfaces.
               </p>
-              <a
-                href="assets/resume.pdf"
-                target="_blank"
-                class="second-btn button"
-                >View resume</a
-              > -->
-
-              <ul class="about-profile">
-                <li class="profile-detail">
-                  Name <span class="detail">Dima</span>
-                </li>
-                <li class="profile-detail">
-                  Age<span class="detail">25</span>
-                </li>
-                <li class="profile-detail">
-                  Addres<span class="detail">Chisinau, Moldova</span>
-                </li>
-                <li class="profile-detail">
-                  Phone<span class="detail"
-                    ><a href="tel:+37369309561">+373 69 309 561</a></span
-                  >
-                </li>
-                <li class="profile-detail">
-                  e-mail<span class="detail"
-                    ><a href="mailto: dumitru.s1998@gmail.com"
-                      >dumitru.s1998@gmail.com</a
-                    ></span
-                  >
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -333,7 +348,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <h2 class="section-title">Contact</h2>
           <a href="mailto:dumitru.s1998@gmail.com" class="second-btn button"

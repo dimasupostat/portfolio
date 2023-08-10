@@ -37,3 +37,15 @@ tiltElements.forEach(function (el) {
     el.style.transform = "perspective(500px) scale(1.1) rotateX(0) rotateY(0)";
   });
 });
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.querySelector(".menus").style.top = "0";
+  } else {
+    document.querySelector(".menus").style.top = "-50px";
+  }
+}
