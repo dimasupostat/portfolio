@@ -73,12 +73,14 @@ section {
 }
 
 .avatar {
-  width: 300px;
-  height: 380px;
+  width: 280px;
+  height: 360px;
   clip-path: ellipse(50% 45% at 55% 30%);
   object-fit: contain;
   /* filter: contrast(0%); */
   cursor: pointer;
+  position: absolute;
+  margin-top: 10px;
 }
 .avatar:hover {
   filter: contrast(100%);
@@ -119,7 +121,7 @@ section {
 
 .about {
   background: var(--gradient-color);
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); */
   color: var(--white-color);
 }
 
@@ -166,18 +168,49 @@ section {
   margin-bottom: 2rem;
 }
 
-.fa {
+.fa,
+.fa-brands {
   color: var(--white-color);
   font-size: 2rem;
   text-align: center;
 }
-
-.fa:hover {
-  background-image: var(--gradient-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.fa-brands {
+  font-size: 4rem;
+  cursor: pointer;
 }
 
+.fa-html5:hover {
+  color: #e34c26;
+}
+.fa-css3:hover {
+  color: #2965f1;
+}
+.fa-js:hover {
+  color: #f0db4f;
+}
+.fa-sass:hover {
+  color: #c69;
+}
+.fa-git:hover {
+  color: #f1502f;
+}
+.fa-npm:hover {
+  color: #cb3837;
+}
+
+.center {
+  margin-left: 300px;
+}
+.languages {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  padding: 50px;
+}
+.langs {
+  display: flex;
+  column-gap: 2rem;
+}
 .description-column .fa:hover {
   background: #333;
   -webkit-background-clip: text;
@@ -310,10 +343,6 @@ a {
     padding: 0;
   }
 
-  .avatar {
-    clip-path: none;
-  }
-
   .contact {
     clip-path: none;
   }
@@ -328,10 +357,12 @@ a {
     font-size: 2em;
   }
 
-  .left-col {
-    margin-bottom: 2rem;
+  .left {
+    position: relative;
+    overflow: hidden;
+    width: 280px;
+    height: 380px;
   }
-
   .button {
     padding: 0.5rem;
     width: 130px;
