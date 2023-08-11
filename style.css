@@ -340,6 +340,9 @@ a {
   .line {
     width: 300px;
   }
+  .flex:last-child {
+    margin-bottom: 2rem;
+  }
 }
 
 .flex {
