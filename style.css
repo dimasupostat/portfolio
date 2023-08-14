@@ -333,6 +333,9 @@ a {
     padding: 1rem 2rem 0 2rem;
     line-height: 1.5rem;
   }
+  .center {
+    margin: -90px 0 0 0;
+  }
 
   .right {
     display: flex;
