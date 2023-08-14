@@ -199,7 +199,10 @@ section {
 }
 
 .center {
-  margin-left: 300px;
+  margin-left: 450px;
+}
+.center li {
+  font-weight: 700;
 }
 .languages {
   display: flex;
